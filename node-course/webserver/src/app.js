@@ -3,6 +3,7 @@ const express = require ('express');
 const hbs = require ('hbs');
 //const geocode = require('./utils/geocode.js');
 //const forecast = require('./utils/forecast.js');
+const port = process.env.PORT || 3000;
 
 const app = express();//express app location
 app.use(express.static(path.join(__dirname,'../public')));//Setting up static directory to serve
@@ -99,6 +100,6 @@ app.get('',(req,res) => {
 //   res.send('About page');
 // });
 
-app.listen(3000,() => {
-  console.log('server is up on port 3000!');
+app.listen(port,() => {
+  console.log('server is up on port ' + port);
 });
