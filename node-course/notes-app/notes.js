@@ -1,3 +1,4 @@
+/* eslint-disable no-debugger */
 const fs = require('fs');
 const chalk = require('chalk');
 
@@ -11,6 +12,8 @@ const addNote = function (title, body) {
     return note.title === title;
   });
 
+  debugger;
+
   if (duplicateNotes.length === 0) {
     notes.push({
       title: title,
@@ -22,6 +25,8 @@ const addNote = function (title, body) {
     console.log('Note title taken!');
   }
 };
+
+
 
 const removeNote = function (title) {
   const notes = loadNotes();

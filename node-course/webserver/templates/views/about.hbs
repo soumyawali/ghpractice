@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel='stylesheet' href='./css/styles.css'> <!relative path-->
+    <script src='/js/app.js'></script> <!absolute path-->
+    <body>
+      <h1> Weather using dynamic style ie hbs template</h1>
+      <!--<h1>{{title}}</h1>-->
+      <h1>{{>header}}</h1><!--Setup partial header-->
+      <img src = '/img/flower.jpeg'>
+      <p>Created by{{name}}</p>
+    </body>
+  </head>
+</html>
